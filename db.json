@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "todo": "Get eggs",
+        "completed": false
+    },
+    {
+        "id": 2,
+        "todo": "Stop Nuclear Armageddon",
+        "completed": false
+    },
+    {
+        "id": 3,
+        "todo": "Discover Krypton",
+        "completed": false
+    },
+    {
+        "id": 4,
+        "todo": "Become K-Pop Star",
+        "completed": false
+    },
+    {
+        "id": 5,
+        "todo": "Finish NoDB",
+        "completed": false
+    }
+]
