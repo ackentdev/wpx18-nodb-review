@@ -10,6 +10,7 @@ class App extends React.Component {
     this.state = {
       todos: []
     }
+    this.deleteTodo = this.deleteTodo.bind(this)
   }
   
   componentDidMount(){
@@ -20,10 +21,18 @@ class App extends React.Component {
     })
   }
 
+  deleteTodo(id){
+    axios.delete(`/api/delete_todo/${id}`).then(res => {
+      this.setState({
+        todos: res.data
+      })
+    })
+}
+
   render(){
     return (
       <div className="App">
-        <List todos={this.state.todos}/>
+        <List deleteTodo={this.deleteTodo} todos={this.state.todos}/>
       </div>
     );
   }

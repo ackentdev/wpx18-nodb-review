@@ -4,10 +4,12 @@ import Button from './Button';
 
 export default function List(props){
 
+
+
     const mappedTodos = props.todos.map( elem => {
         return <div key={elem.id}>
             <ToDo todo={elem.todo}/>
-            <Button/>
+            <Button value={"Delete"} id={elem.id} function={props.deleteTodo}/>
         </div>
     })
 
