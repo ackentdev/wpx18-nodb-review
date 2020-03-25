@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import List from './components/List';
 
 import './App.css';
 
@@ -20,10 +21,9 @@ class App extends React.Component {
   }
 
   render(){
-    console.log(this.state)
     return (
       <div className="App">
-        
+        <List todos={this.state.todos}/>
       </div>
     );
   }
