@@ -40,8 +40,8 @@ guidelines: https://docs.google.com/document/d/1_EZzVUEbb6lTleAK5oguE6ZaHg_ST4we
 
 - get: "/api/todos"
 - post: "/api/add_todo"
-- put: "/api/todo_update"
-- delete: "/api/delete_todo"
+- put: "/api/todo_update/:id"
+- delete: "/api/delete_todo/:id"
 
 ### data
 ```js
